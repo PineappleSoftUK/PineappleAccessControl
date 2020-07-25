@@ -17,7 +17,21 @@ if (!$includeOpendbOk) {
 include("header.php");
 ?>
 
+<h1>Pineapple Access Control</h1>
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
+  echo '<p>Welcome to Pineapple Access Control the system is now running, please <a href="login.php">log in</a> to manage the system.</p>';
+} else {
+?>
+
+
+<p>Welcome to the Pineapple Access Control management page.</p>
+
+<a href="add_user.php">Add a new user</a>
 
 <?php
+}
 include("footer.php");
 ?>
