@@ -17,7 +17,7 @@ class ConstructDB extends SQLite3
 {
   function __construct()
   {
-    $this->open('db/pac.db');
+    $this->open('pac.db');
   }
 }
 
