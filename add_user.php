@@ -1,7 +1,20 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 /*
 * A page for superusers to add new users
 */
+
+//Security for includes
+$includes = TRUE;
+
+//Include file to open database
+$includeOpendbOk = include("open_db.php");
+if (!$includeOpendbOk) {
+  echo "An important file is missing or cannot be accessed: open_db.php";
+  exit();
+}
 
 //Check if user is logged in...
 session_start();
