@@ -13,14 +13,11 @@ if (!$includeOpendbOk) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pineapple Access Control</title>
-  </head>
-  <body>
-    
-  </body>
-</html>
+<?php
+include("header.php");
+?>
+
+
+<?php
+include("footer.php");
+?>
