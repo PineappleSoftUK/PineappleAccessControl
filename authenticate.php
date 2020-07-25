@@ -59,5 +59,5 @@ include("header.php");
 </form> 
 
 <?php
-include("header.php");
+include("footer.php");
 ?>
