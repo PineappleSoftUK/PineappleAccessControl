@@ -33,8 +33,8 @@ if (password_verify($password, $res['hash'])) {
   $_SESSION['loggedin'] = true;
   $_SESSION['username'] = $res['username'];
   $_SESSION['usertype'] = $res['userType'];
-  header( "refresh:3;url=../" );
-  echo 'Log in successful, You will now be redirected automatically, or, click <a href="../">here</a>.';
+  header( "refresh:3;url=index.php" );
+  echo 'Log in successful, You will now be redirected automatically, or, click <a href="index.php">here</a>.';
   exit;
 } 
 ?>
