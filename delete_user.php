@@ -68,6 +68,8 @@ if (isset($_POST['submit'])) {
 
   <p>User ID '<?php echo $userId;?>' was successfully deleted</p>
 
+  <p><a href="index.php">Return to home</a></p>
+
   <?php
 }
 
