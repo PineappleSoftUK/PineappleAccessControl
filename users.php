@@ -16,7 +16,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
   echo 'You must log in to view this page';
   exit();
 }
-?>
 
 //Check to ensure user is Superuser
 if ($_SESSION['usertype'] != "superuser") {
