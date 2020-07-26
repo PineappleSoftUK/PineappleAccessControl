@@ -30,6 +30,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 <p>Welcome to the Pineapple Access Control management page.</p>
 
 <a href="add_user.php">Add a new user</a>
+<br>
+<a href="users.php">View/Amend users</a>
+<br>
+<a href="change_password.php">Change your password</a>
 
 <?php
 }
