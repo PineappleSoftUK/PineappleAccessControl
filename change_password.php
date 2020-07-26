@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
 
   //Check new passwords match
   if ($newPassword != $repeatPassword) {
-    echo "<p class='red'>Your new passwords do not match, please <a href='reset_password.php'>try again</a></p>";
+    echo "<p class='red'>Your new passwords do not match, please <a href='change_password.php'>try again</a></p>";
     echo "</body></html>";
     exit();
   }
@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
   $res = $result->fetchArray();
 
   if (!password_verify($currentPassword, $res['hash'])) {
-    echo "<p class='red'>You entered your current password incorrectly, please <a href='reset_password.php'>try again</a></p>";
+    echo "<p class='red'>You entered your current password incorrectly, please <a href='change_password.php'>try again</a></p>";
     echo "</body></html>";
     exit();
   }
