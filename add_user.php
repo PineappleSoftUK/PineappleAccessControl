@@ -101,6 +101,8 @@ if (isset($_POST['submit'])) {
 
   <p>The user '<?php echo $username;?>' has been added successfully.</p>
 
+  <p><a href="index.php">Return to home</a></p>
+
   <?php
   } 
 }
