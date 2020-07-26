@@ -8,7 +8,7 @@ www.pineapplesoft.co.uk
 Description
 ------------
 
-A relatively self-contained basic PHP based member system to protect pages on a website
+A relatively self-contained and basic PHP-based member system to restrict certain pages on a website to those who log-in, with user accounts issued by a superuser. Please see the GitHub Wiki for more.
 
 
 Important Information
@@ -33,6 +33,11 @@ You should have received a copy of the GNU General Public License along with thi
 
 Release Notes
 --------------
+
+Version 1.0.0 -- 26 July 2020
+
++ Initial Release
+
 
 Pre-release - Started work on 8 July 2020
 
