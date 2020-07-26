@@ -29,15 +29,19 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
 <p>Welcome to the Pineapple Access Control management page.</p>
 
-<a href="add_user.php">Add a new user</a>
-<br>
-<a href="users.php">View/Amend users</a>
-<br>
+<?php
+if ($_SESSION['usertype'] == "superuser") {
+  echo '<a href="add_user.php">Add a new user</a><br><a href="users.php">View/Amend users</a><br>';
+}
+?>
+
 <a href="change_password.php">Change your password</a>
 <br>
-<hr>
 <br>
 <a href="logout.php">Log out</a>
+<br>
+<hr>
+
 
 <?php
 }
