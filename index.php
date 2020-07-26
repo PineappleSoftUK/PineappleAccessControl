@@ -22,7 +22,7 @@ include("header.php");
 session_start();
 
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
-  echo '<p>Welcome to Pineapple Access Control the system is now running, please <a href="login.php">log in</a> to manage the system.</p>';
+  echo '<p>Welcome to Pineapple Access Control. The system is now up and running, please <a href="login.php">log in</a> to manage users and settings.</p>';
 } else {
 ?>
 
