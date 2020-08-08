@@ -9,7 +9,7 @@ include("header.php");
   <input type="text" id="usernameField" name="usernameField" placeholder="Username..">
 
   <label for="passwordField">Password</label>
-  <input type="text" id="passwordField" name="passwordField" placeholder="Password..">
+  <input type="password" id="passwordField" name="passwordField" placeholder="Password..">
 
   <input type="reset" value="Reset">
   <input type="submit" value="Submit">

@@ -33,13 +33,13 @@ if (!isset($_POST['submit'])) {
   <form action="change_password.php" method="post">
 
     <label for="currentPasswordField">Current Password</label>
-    <input type="text" id="currentPasswordField" name="currentPasswordField" placeholder="Password.."><br>
+    <input type="password" id="currentPasswordField" name="currentPasswordField" placeholder="Password.."><br>
 
     <label for="newPasswordField">New Password</label>
-    <input type="text" id="newPasswordField" name="newPasswordField" placeholder="Password.."><br>
+    <input type="password" id="newPasswordField" name="newPasswordField" placeholder="Password.."><br>
 
     <label for="repeatPasswordField">Repeat New Password</label>
-    <input type="text" id="repeatPasswordField" name="repeatPasswordField" placeholder="Password.."><br>
+    <input type="password" id="repeatPasswordField" name="repeatPasswordField" placeholder="Password.."><br>
 
     <input type="submit" name="submit" value="Continue">
   </form>

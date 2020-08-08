@@ -49,7 +49,7 @@ if (!isset($_POST['submit'])) {
     <input type="text" id="usernameField" name="usernameField" placeholder="Username.." required>
 
     <label for="passwordField">Password (required)</label>
-    <input type="text" id="passwordField" name="passwordField" placeholder="Password.." required>
+    <input type="password" id="passwordField" name="passwordField" placeholder="Password.." required>
 
     <fieldset id="faults">
       <legend>User Type (please select):</legend>
