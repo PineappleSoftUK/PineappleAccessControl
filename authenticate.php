@@ -17,6 +17,14 @@ if (!$includeOpendbOk) {
 
 session_start();
 
+$refer = "index.php";
+
+//Look for referal page
+if (isset($_SESSION['refer'])) {
+  $refer = $_SESSION['refer'];
+}
+
+
 //Process form and set variables...
 $username = $_POST['usernameField'];
 $password = $_POST['passwordField'];
@@ -33,7 +41,8 @@ if (password_verify($password, $res['hash'])) {
   $_SESSION['loggedin'] = true;
   $_SESSION['username'] = $res['username'];
   $_SESSION['usertype'] = $res['userType'];
-  header( "refresh:3;url=index.php" );
+  header("Location: " . $refer);
+  echo $refer;
   echo 'Log in successful, You will now be redirected automatically, or, click <a href="index.php">here</a>.';
   exit;
 } 
