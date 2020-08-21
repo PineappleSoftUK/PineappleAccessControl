@@ -34,6 +34,14 @@ You should have received a copy of the GNU General Public License along with thi
 Release Notes
 --------------
 
+Version 1.0.2 -- 21 August 2020
+
++ When logging in the system will now redirect to the referring page
+
+Version 1.0.1 -- 8 August 2020
+
++ Masked passwords
+
 Version 1.0.0 -- 26 July 2020
 
 + Initial Release
